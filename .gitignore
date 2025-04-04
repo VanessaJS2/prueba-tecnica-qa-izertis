@@ -1,0 +1,11 @@
+# Ignorar carpeta de descargas de Cypress
+cypress/downloads/
+
+# Ignorar screenshots generados por Cypress
+cypress/screenshots/
+
+# Ignorar videos generados por Cypress
+cypress/videos/
+
+# Ignorar node_modules (típico en cualquier proyecto Node.js)
+node_modules/
