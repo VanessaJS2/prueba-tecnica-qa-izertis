@@ -5,7 +5,7 @@ cypress/downloads/
 cypress/screenshots/
 
 # Ignorar videos generados por Cypress
-cypress/videos/
+#cypress/videos/
 
 # Ignorar node_modules (típico en cualquier proyecto Node.js)
 node_modules/
