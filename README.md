@@ -26,8 +26,35 @@ Automatizar la búsqueda de la palabra **automatización** en Google, acceder al
 
 **Herramienta usada**: Cypress
 
-**Prueba automatizada**:[`wikipedia_automatizacion.cy.js`](.cypress/e2e/wikipedia_automatizacion.cy.js)
+**Prueba automatizada**:[`wikipedia_automatizacion.cy.js`](cypress/e2e/wikipedia_automatizacion.cy.js)
 
 **Evidencias**:  
 Capturas generadas automáticamente al correr la prueba (pantalla completa + párrafo).
+
+**Nota técnica**:
+Automatizar búsquedas directamente en Google presenta limitaciones, ya que Google implementa mecanismos anti-bots como reCAPTCHA y análisis de comportamiento automatizado, lo cual puede impedir que las pruebas se ejecuten correctamente; en esta prueba, se optó por navegar directamente al enlace de Wikipedia para evitar estas restricciones y mantener la estabilidad de la prueba.
+
+
+## ✅ Punto 3: Automatización de API - Petstore
+
+**Objetivo**:
+- Crear un usuario (`POST /user`)
+- Consultarlo (`GET /user/{username}`)
+- Obtener mascotas vendidas (`GET /pet/findByStatus`)
+- Extraer `{id, name}`
+- Contar cuántas mascotas tienen el mismo nombre
+
+**Tecnología**: Cypress + lógica personalizada en JavaScript
+
+**Archivos clave**:
+- [`pet-store.cy.js`](cypress/e2e/pet-store.cy.js): prueba automatizada
+- [`nameCounter.js`](cypress/utils/nameCounter.js): clase que procesa los datos
+- [`petList.js`](cypress/utils/petList.js): funcion que lista las mascotas
+
+**Resultado esperado (ejemplo)**:
+{
+  "doggie": 6,
+  "Bella": 2,
+  "Max": 1
+}
 
