@@ -26,8 +26,8 @@ describe('\u{1F436} Ejercicio 3 - Tratamiendo de datos en APIS', () => {
       const contador = new nameCounter(mascotas);
       const resultado = contador.contarRepetidos();
   
-      console.log("🧾 Resultado final:", resultado);
-      cy.log(JSON.stringify(resultado));
+      console.log("\u{1F4C4} Resultado final:", resultado);
+      cy.log("\u{1F4C4} Resultado final:" + JSON.stringify(resultado));
       
     })
   });
