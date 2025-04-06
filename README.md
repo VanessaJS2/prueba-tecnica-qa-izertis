@@ -2,6 +2,19 @@
 
 Este repositorio contiene la documentación de la prueba técnica para el rol de QA en Izertis.
 
+## Cómo ejecutar el proyecto
+
+**Requisitos**
+Tener instalado Node.js previamente 
+Tener npm disponible
+
+**Instrucciones rápidas**
+- git clone https://github.com/VanessaJS2/prueba-tecnica-qa-izertis.git
+- cd prueba-tecnica-qa-izertis
+- npm i
+- npx cypress open     ,Para ejecutar desde la interfaz
+- npx cypress run     ,Para ejecutar por consola y generar videos
+
 ## ✅ Punto 1: Reporte de Bug en el sitio de la Universidad de Antioquia
 
 🔍 **Descripción**:  
@@ -27,9 +40,6 @@ Automatizar la búsqueda de la palabra **automatización** en Google, acceder al
 **Herramienta usada**: Cypress
 
 **Prueba automatizada**:[`wikipedia_automatizacion.cy.js`](cypress/e2e/wikipedia_automatizacion.cy.js)
-
-**Evidencias**:  
-Capturas generadas automáticamente al correr la prueba (pantalla completa + párrafo).
 
 **Nota técnica**:
 Automatizar búsquedas directamente en Google presenta limitaciones, ya que Google implementa mecanismos anti-bots como reCAPTCHA y análisis de comportamiento automatizado, lo cual puede impedir que las pruebas se ejecuten correctamente; en esta prueba, se optó por navegar directamente al enlace de Wikipedia para evitar estas restricciones y mantener la estabilidad de la prueba.
